@@ -1,0 +1,27 @@
+read low #
+read high #
+= low 1 #
+if
+low >= high #
+write "<h2>输入错误low必须小于high</h2>"#
+endif
+if
+low < high #
+write "<h2>从"#
+write low #
+write "到"#
+write high #
+write "的求和表达式为</h2></br>"#
+loop
+low != high + 1 #
+write low #
+if
+low != high #
+write "+"#
+endif
+= sum sum + low #
+= low low + 1 #
+endloop
+write "="#
+write sum #
+endif

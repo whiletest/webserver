@@ -1,0 +1,40 @@
+<html>
+<title>test1</title>
+<body>
+<h1>this is a simple c file</h1>
+<p>
+BEGINC
+int low;
+int high;
+int sum;
+read low;
+read high;
+low  = 1;
+if(low >= high)
+{
+write "<h2>输入错误low必须小于high</h2>";
+}
+if(low < high)
+{
+write "<h2>从";
+write low;
+write "到";
+write high;
+write "的求和表达式为</h2></br>";
+while(low != high+1)
+{
+write low;
+if(low != high)
+{
+write "+";
+}
+sum = sum + low;
+low = low + 1;
+}
+write "=";
+write sum;
+}
+ENDC
+</p>
+</body>
+</html>
